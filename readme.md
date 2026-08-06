@@ -14,7 +14,7 @@ A simple command-line calculator built with Python. It performs basic arithmetic
 ## 📁 Project Structure
 
 ```
-calculator.py
+main.py
 README.md
 ```
 
