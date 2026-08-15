@@ -64,12 +64,10 @@ You Exit, Thank You!
 
 - Accepts integer inputs only.
 - Invalid operators are treated as division in the current version.
-- Division by zero will raise an error.
 
 ## 🔮 Future Improvements
 
 - Input validation
-- Handle division by zero
 - Support decimal numbers
 - Add more operations (`%`, `//`, `**`)
 - Improve error handling
