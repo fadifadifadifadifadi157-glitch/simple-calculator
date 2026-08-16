@@ -8,15 +8,17 @@ A simple command-line calculator built with Python. It performs basic arithmetic
 - ➖ Subtraction
 - ✖️ Multiplication
 - ➗ Division
-- Continuous calculations using a loop
-- Easy-to-use command-line interface
+- 🔢 Input validation for numbers
+- ⚠️ Invalid operation handling
+- 🚫 Division by zero protection
+- 🔄 Continuous calculations using a loop
+- 🖥️ Easy-to-use command-line interface
 
 ## 📁 Project Structure
 
-```
+```text
 main.py
 README.md
-```
 
 ## 🚀 Getting Started
 
@@ -67,7 +69,6 @@ You Exit, Thank You!
 
 ## 🔮 Future Improvements
 
-- Input validation
 - Support decimal numbers
 - Add more operations (`%`, `//`, `**`)
 - Improve error handling
