@@ -1,6 +1,6 @@
 # 🧮 Python Calculator
 
-A simple command-line calculator built with Python. It performs basic arithmetic operations and allows users to calculate continuously until they choose to exit.
+A simple command-line calculator built with Python. It performs arithmetic operations and allows users to calculate continuously until they choose to exit.
 
 ## ✨ Features
 
@@ -8,6 +8,9 @@ A simple command-line calculator built with Python. It performs basic arithmetic
 - ➖ Subtraction
 - ✖️ Multiplication
 - ➗ Division
+- 🔢 Modulus (`%`)
+- 🔽 Floor Division (`//`)
+- ⚡ Exponentiation (`**`)
 - 🔢 Input validation for numbers
 - ⚠️ Invalid operation handling
 - 🚫 Division by zero protection
@@ -37,19 +40,27 @@ python calculator.py
 ```text
 Enter the first number: 20
 Enter the second number: 5
-Enter the operation you want to perform (+, -, *, /): *
+Enter operation (+, -, *, /, %, //, **): *
 
 The Result is: 100
 
-Do you want to Calculate more? (Yes/No): yes
+Do you want to calculate more? (Yes/No): yes
 
 Enter the first number: 10
-Enter the second number: 2
-Enter the operation you want to perform (+, -, *, /): /
+Enter the second number: 3
+Enter operation (+, -, *, /, %, //, **): %
 
-The Result is: 5.0
+The Result is: 1
 
-Do you want to Calculate more? (Yes/No): no
+Do you want to calculate more? (Yes/No): yes
+
+Enter the first number: 2
+Enter the second number: 3
+Enter operation (+, -, *, /, %, //, **): **
+
+The Result is: 8
+
+Do you want to calculate more? (Yes/No): no
 
 You Exit, Thank You!
 ```
@@ -70,7 +81,6 @@ You Exit, Thank You!
 ## 🔮 Future Improvements
 
 - Support decimal numbers
-- Add more operations (`%`, `//`, `**`)
 - Improve error handling
 
 ## 👨‍💻 Author
