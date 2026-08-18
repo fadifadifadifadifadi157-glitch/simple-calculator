@@ -1,37 +1,48 @@
-def Calculator(Num1, Num2,Choice):
-    if Choice =="+":
+def Calculator(Num1, Num2, Choice):
+    if Choice== "+":
         return Num1 + Num2
-    elif Choice== "-":
-        return Num1- Num2
-    elif Choice =="*":
-        return Num1 * Num2
-    elif Choice =="/":
-        if Num2 == 0:
+    elif Choice=="-":
+        return Num1 - Num2
+    elif Choice == "*":
+        return Num1*Num2
+    elif Choice=="/":
+        if Num2==0:
             return "Cannot divide by zero!"
-        return Num1/ Num2
+        return Num1/Num2
+    elif Choice =="%":
+        if Num2== 0:
+            return "Cannot divide by zero!"
+        return Num1%Num2
+    elif Choice== "//":
+        if Num2 ==0:
+            return "Cannot divide by zero!"
+        return Num1 //Num2
+    elif Choice =="**":
+        return Num1** Num2
     else:
         return "Invalid operation!"
+
 
 while True:
     try:
         Num1 =int(input("Enter the first number: "))
-        Num2= int(input("Enter the second number: "))
+        Num2 = int(input("Enter the second number: "))
     except:
         print("Please enter numbers only!")
         continue
 
-    Choice =input("Enter operation (+, -, *, /): ")
+    Choice =input("Enter operation (+, -, *, /, %, //, **): ")
 
-    if Choice not in ["+","-", "*", "/"]:
+    if Choice not in ["+", "-", "*","/", "%", "//", "**"]:
         print("Invalid operation!")
         continue
 
-    result= Calculator(Num1, Num2, Choice)
+    result = Calculator(Num1, Num2, Choice)
     print("The Result is:", result)
-    
-    Again =input("Do you want to calculate more? (Yes/No):").lower()
 
-    if Again== "no":
+    Again = input("Do you want to calculate more? (Yes/No): ").lower()
+
+    if Again =="no":
         print("You Exit, Thank You!")
         break
 
